@@ -1,0 +1,274 @@
+html   {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Lato , sans-serif;
+    background: #f6f9f9;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    background: white;
+    height: 60px;
+    padding: 30px 250px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+}
+
+.nav_content {
+    position: absolute;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav_title {
+    color: #2d3950;
+    display: inline-block;
+}
+
+.nav img {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    display: block;
+}
+
+.header_container {
+    background: url(img/bg.png) no-repeat center/cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content {
+    display: block;
+    padding-top: 225px;
+    margin: auto;
+}
+
+.title {
+    font-size: 120px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.line {
+    width: 600px;
+    border: 2px solid #15a4fa;
+    margin-bottom: 45px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.button {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 18px 35px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    background: rgba(0, 0, 0, 0);
+    height: 70px;
+    width: 180px;
+    cursor: pointer;
+    appearance: none;
+    margin-bottom: 175px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.button:hover {
+    background: #15a4fa;
+    font-size: 20px;
+    padding: 15px 30px;
+}
+
+.arrow {
+    display: block;
+    margin: auto;
+    margin-bottom: 90px;
+}
+
+@media (max-width : 1199px) {    
+
+header {
+    margin-bottom: -45px;
+}
+    .nav {
+    display:flex;
+    justify-content: center;
+}
+
+    .nav_content {
+        margin-top: 0px
+    }
+
+.title {
+    font-size: 100px;
+    margin: auto;   
+    margin-bottom: 45px;
+}
+.line {
+    width: 600px;
+    margin:auto;
+    margin-bottom: 45px;
+}
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 40px ;
+}
+}
+
+
+@media (max-width: 650px ) { 
+    .nav {
+        height: 30px;
+        padding: 10px 0;
+    }
+    .title {
+        font-size: 80px;
+    }
+    .line {
+        width: 400px
+    }
+    .subtitle {
+        font-size: 14px ;
+    }
+    .button {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 50px;
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    .button:hover {
+        background: #15a4fa;
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+    
+    .arrow {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 400px ) {
+    
+    .title {
+        margin-bottom: 20px;
+    }
+    
+    .line {
+        width: 200px;
+    }
+}
+
+/* Simple & and pure design */
+
+.simple {
+    margin-top: 60px;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.simple_content {
+    padding: 0 265px;
+    width: 100%;
+    display: block;
+}
+
+.simple_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 400;
+}
+
+.simple_subtitle {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #999999;
+    line-height: 40px;
+}
+
+@media (max-width : 1640px) {
+ .simple_subtitle {
+    display: block;
+    font-size: 18px;
+    line-height: 35px;
+ }
+}
+
+@media (max-width : 1421px) {
+    .simple_subtitle {
+        display: block;
+        line-height: 30px; 
+    }
+}
+
+@media (max-width:1199px) {
+    .simple_content {
+        padding: 0 100px;
+    }
+    
+    .simple_title {
+        text-align: center;
+        font-size: 40px;
+    }
+    .simple_subtitle {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 880px ) {
+    .simple {
+        margin-top: 0px;
+    }
+    .simple_content {
+        padding: 0 100px;
+    }
+    
+    .simple_title {
+        margin-top: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+}
