@@ -11,7 +11,6 @@ body {
     height: 100vh;
     width: 100%;
     font-family: Lato , sans-serif;
-    background: black;
 }
 
 /* HEADER */
@@ -148,6 +147,11 @@ header {
 
 
 @media (max-width: 650px ) { 
+    
+    .header {
+        height: 80vh;
+    }
+    
     .nav {
         height: 30px;
         padding: 10px 0;
@@ -176,6 +180,7 @@ header {
     }
     
     .arrow {
+        display: none;
         margin-bottom: 50px;
     }
 
@@ -201,12 +206,14 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: #f6f9f9;
 }
 
 .simple_content {
     padding: 0 265px;
     width: 100%;
     display: block;
+    
 }
 
 .simple_title {
@@ -273,18 +280,112 @@ header {
     }
 }
 
+
 /* Features Container */
 
 .featuires-block {
-
+    display: flex;
+    justify-content: center;
     margin: 0;
     width: 100%;
-    height: 20vh;
+    height: 30vh;
 }
 
 .features_container {
-    width: 60%;
+    background: #fff;
+    padding: 65px 280px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.feature-1, .feature-2 , .feature-3  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-image {
+    display: block;
+    margin-bottom: 30px;
+    width: 10px;
+    height: 10px;
+}
+
+.features_title {
+
+    margin: 20px auto;
+    color: #2d3950;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.features_subtitle {
+    width: 80%;
+    color: #999999;
+    font-size: 15px;
+}
+
+@media (max-width : 1399px) {
+    .features_container {
+        padding: 60px 200px;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width:1199px) {
+    .features_container {
+        padding: 60px 50px;
+    } 
+}
+
+@media (max-width:949px) {
+    
+    .features_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+}
+
+    .feature-1 , .feature-2 , .feature-3 {
+        width: 100%;
+        display: flex;
+        flex-direction: ;
+    }
+
+    .features_image {
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+
+    .features_title {
+        font-size: 24px;
+    }
+
+    .features_subtitle{
+        font-size: 20px;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 400px ) {
+    .features_subtitle {
+        font-size: 16px;
+    }
+    .features_title {
+        font-size: 18px;
+    }
+    .features_image {
+        width: 100px;
+        height: 100px;
+    }
 }
