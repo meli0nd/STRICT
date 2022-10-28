@@ -188,6 +188,10 @@ header {
 
 @media (max-width: 400px ) {
     
+    .header {
+        height: 100vh;
+    }
+    
     .title {
         margin-bottom: 20px;
     }
@@ -270,13 +274,24 @@ header {
         margin-top: 0px;
     }
     .simple_content {
-        padding: 0 100px;
+        padding: 0 50px;
     }
     
     .simple_title {
         margin-top: 20px;
         font-size: 40px;
         text-align: center;
+    }
+}
+
+@media (max-width: 401px ) {
+    
+    .simple_content {
+        padding: 0 10px;
+    }
+    
+    .simple_subtitle {
+        font-size: 20px;
     }
 }
 
@@ -300,6 +315,7 @@ header {
 }
 
 .feature-1, .feature-2 , .feature-3  {
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,7 +331,6 @@ header {
 }
 
 .features_title {
-
     margin: 20px auto;
     color: #2d3950;
     font-size: 22px;
@@ -356,7 +371,6 @@ header {
     .feature-1 , .feature-2 , .feature-3 {
         width: 100%;
         display: flex;
-        flex-direction: ;
     }
 
     .features_image {
@@ -387,5 +401,66 @@ header {
     .features_image {
         width: 100px;
         height: 100px;
+    }
+}
+
+/* Works */
+
+.works {
+    margin: 0;
+    height: 100vh;
+    background-color: #f6f9f9;
+}
+
+.works_container {
+    background-color: #f6f9f9;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.works_title {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 400;   
+}
+
+.works_subtitle {
+    margin-bottom: 85px;
+    font-size: 20px;
+    color: #999999;
+}
+
+.works_images {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.works_images img {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: block;
+    width: 360px;
+    height: 260px;
+}
+
+@media (max-width: 600px) {
+    .works_title {
+        font-size: 40px;
+        text-align: center;
+    }
+    .works_images img {
+        margin-bottom: 30px;
+        margin-right: 0;
     }
 }
